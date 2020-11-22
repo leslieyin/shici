@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        {% block head %}
+        <title>{% block title %}{% endblock %}</title>
+        <meta name="author"  content="JackeyGao">
+        <meta name="description" content="中华古诗词, 古诗词学习">
+        <meta name="keywords"  content="诗词, 古诗词, 唐诗, 宋词, 诗经, 三字经, 唐诗三百首, 宋词三百首">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{root}}assets/global.css?v=3334">
+        <link rel="stylesheet" href="{{root}}assets/theme.css">
+        <link rel="stylesheet" href="{{root}}assets/semantic/components/site.min.css">
+        {% include 'favicon.html' %}{% endblock %}
+    </head>
+    
+    <body>
+        <div id="main" style="background-image: url('{{ root }}assets/images/ying.png'); ">
+        {% block main %}
+        {% endblock %}
+
+
+        </div>
+    </body>
+    {% block footer %}
+ 
+    {% endblock %}
+</html>
